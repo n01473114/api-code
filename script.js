@@ -5,6 +5,8 @@ const punchline = document.getElementById("punchline");
 
 getJokeBtn.addEventListener("click", function () {
   generateJoke();
+  punchline.style.display = "none";
+  punchlineBtn.style.display = "block";
 });
 
 punchlineBtn.addEventListener("click", function () {
@@ -17,7 +19,7 @@ function generateJoke() {
     method: "GET",
     headers: {
       "x-rapidapi-host": "dad-jokes.p.rapidapi.com",
-      "x-rapidapi-key": "c151f1fcd3msh0a7058898e35666p1e5812jsnf49e9ac5654a",
+      "x-rapidapi-key": "a7f2e439f4msh5846e8913135da4p119c6cjsn99dd95a99657",
     },
   })
     .then((response) => response.json())
